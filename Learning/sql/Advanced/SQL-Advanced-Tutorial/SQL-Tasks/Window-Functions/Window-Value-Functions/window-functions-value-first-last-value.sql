@@ -1,0 +1,10 @@
+SELECT
+    OrderID,
+    ProductID,
+    Sales,
+    FIRST_VALUE(Sales) OVER (PARTITION BY ProductID ORDER BY Sales) AS LowestSales,
+    LAST_VALUE(Sales) OVER (PARTITION BY ProductID ORDER BY Sales ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING) AS HighestSales,
+    Sales - FIRST_VALUE(Sales) OVER (PARTITION BY ProductID ORDER BY Sales) SalesDiffFirst,
+    LAST_VALUE(Sales) OVER (PARTITION BY ProductID ORDER BY Sales ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING) - Sales SalesDiffLast
+FROM
+    Sales.Orders

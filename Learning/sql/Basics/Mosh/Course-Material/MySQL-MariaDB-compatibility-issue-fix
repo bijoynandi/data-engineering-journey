@@ -1,0 +1,13 @@
+#  The dump was created in MySQL 8+ and we're importing it into MariaDB. Older versions do not support the utf8mb4_0900_ai_ci collation
+
+# Fix the SQL file:
+
+# Make a backup first
+cp /home/bijoy/Documents/Data-Engineering/Learning/sql/Basics/Mosh/Course-Material/create-databases.sql /home/bijoy/Documents/Data-Engineering/Learning/sql/Basics/Mosh/Course-Material/create-databases-mariadb.sql
+
+# Replace the unsupported collation
+sed -i 's/utf8mb4_0900_ai_ci/utf8mb4_unicode_ci/g' /home/bijoy/Documents/Data-Engineering/Learning/sql/Basics/Mosh/Course-Material/create-databases-mariadb.sql
+
+# Load the database
+mariadb -u root -p
+source /home/bijoy/Documents/Data-Engineering/Learning/sql/Basics/Mosh/Course-Material/create-databases-mariadb.sql

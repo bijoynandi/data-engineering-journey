@@ -1,0 +1,23 @@
+# Private docs
+Docs/career/claude-continuation-script-feb-2026.md
+Docs/career/complete-review.md
+Docs/career/linkedin-reference.md
+Docs/career/*/
+
+# Data files (large)
+Data/raw/
+Data/processed/
+Data/staging/
+*.csv
+*.parquet
+
+# Books (copyrighted)
+Learning/books/*.pdf
+
+# Notebooks outputs
+Notebooks/**/*.ipynb
+
+# Large files
+Learning/sql/Advanced/SQL-Advanced-Tutorial/SQL-Ultimate-Course/docs/*
+Learning/sql/SQL-for-Data-Analytics/Beginner/Data_Job_Analysis_Project/csv_files/*
+Learning/sql/SQL-for-Data-Analytics/Intermediate/contoso_100k_database/*
