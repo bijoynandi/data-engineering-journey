@@ -231,7 +231,7 @@ print(
     file.endswith(".csv")
 )  #  endswith() checks if a string ends with a specified substring
 
-email = "bijoy@outlook.com"
+email = "bijoy@mail.com"
 print("@" in email)  #  in operator checks if a substring is present in a string
 
 url = "https://api.github.com/users/bijoynandi"
@@ -287,7 +287,7 @@ print(len(password) >= 8 and password.find(" ") == -1)
 # or
 print(len(password) >= 8 and " " not in password)
 
-email = "bijoynandi31@gmail.com"
+email = "bijoynandi@proton.me"
 print(email != "" and "@" in email and email.endswith(".com"))
 # or
 print(email != "" and email.find("@") != -1 and email.endswith(".com"))

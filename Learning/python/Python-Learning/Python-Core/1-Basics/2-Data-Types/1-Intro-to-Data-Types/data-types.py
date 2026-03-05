@@ -28,7 +28,7 @@ print(
 )  # bit_length() Method of <class int> returns the number of bits required to represent an integer in binary
 
 # Data Type Challenge
-age = 38
+age = 39
 height = 1.77
 name = "Bijoy Nandi"
 is_student = False
