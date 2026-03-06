@@ -1,3 +1,8 @@
+# ============================================
+# PROJECT REPOSITORIES (separate repos)
+# ============================================
+Projects/*/
+
 # Private docs (personal career planning)
 Docs/career/*.md
 Docs/career/*/
