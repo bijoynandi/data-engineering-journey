@@ -2,7 +2,9 @@
 Docs/career/claude-continuation-script-feb-2026.md
 Docs/career/complete-review.md
 Docs/career/linkedin-reference.md
+Docs/career/*.md
 Docs/career/*/
+Docs/career
 
 # Data files (large)
 Data/raw/
