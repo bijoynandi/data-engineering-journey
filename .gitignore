@@ -3,24 +3,33 @@
 # ============================================
 Projects/*/
 
-# Private docs (personal career planning)
-Docs/career/*.md
-Docs/career/*/
+# ============================================
+# PRIVATE DOCS (personal career planning)
+# ============================================
+Docs/career/
 
-# Data files (large)
+# ============================================
+# DATA FILES (large)
+# ============================================
 Data/raw/
 Data/processed/
 Data/staging/
 *.csv
 *.parquet
 
-# Books (copyrighted)
+# ============================================
+# BOOKS (copyrighted)
+# ============================================
 Learning/books/*.pdf
 
-# Notebooks outputs
+# ============================================
+# NOTEBOOKS OUTPUTS
+# ============================================
 Notebooks/**/*.ipynb
 
-# Large files
+# ============================================
+# LARGE FILES
+# ============================================
 Learning/sql/Advanced/SQL-Advanced-Tutorial/SQL-Ultimate-Course/docs/*
 Learning/sql/SQL-for-Data-Analytics/Beginner/Data_Job_Analysis_Project/csv_files/*
 Learning/sql/SQL-for-Data-Analytics/Intermediate/contoso_100k_database/*
